@@ -1,2 +1,5 @@
 # IT-Comeback.github.io
 Documentation of It Journey and AI leveraging and Experiments
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
