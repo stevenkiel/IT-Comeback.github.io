@@ -3,103 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven Kiel | IT Comeback Journey to Amazon DCT III</title>
+    <title>Steven Kiel | AI Made Me Employable</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; color: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background: #f5f5f5; color: #333; }
         .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #232f3e; border-bottom: 3px solid #ff9900; padding-bottom: 10px; margin-top: 0; }
-        h2 { color: #232f3e; margin-top: 30px; }
+        
+        /* Navigation Bar */
+        nav { background: #232f3e; padding: 10px; border-radius: 5px; margin-bottom: 30px; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; margin: 0 5px; border-radius: 4px; font-weight: bold; display: inline-block; }
+        nav a:hover, nav a.active { background: #ff9900; color: #232f3e; }
+
+        /* Profile Picture */
+        .profile-pic-container { text-align: center; margin-bottom: 20px; }
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; border: 5px solid #ff9900; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+
+        h1 { color: #232f3e; text-align: center; margin-bottom: 5px; }
+        .channel-name { color: #ff9900; text-align: center; font-size: 1.5em; font-weight: bold; margin-top: 0; margin-bottom: 10px; }
+        h2 { color: #232f3e; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 5px;}
         h3 { color: #ff9900; margin-bottom: 5px; }
-        .tagline { font-size: 1.1em; color: #555; font-style: italic; margin-bottom: 20px; }
+        .tagline { font-size: 1.1em; color: #555; font-style: italic; margin-bottom: 20px; text-align: center; }
+        
         .journey-box { background: #fff3cd; border-left: 4px solid #ff9900; padding: 15px; margin: 20px 0; border-radius: 0 5px 5px 0; }
-        .day-entry { background: #f8f9fa; padding: 25px; margin: 20px 0; border-radius: 5px; border: 1px solid #e9ecef; }
-        .tech-stack { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+        .latest-box { background: #e7f3ff; border-left: 4px solid #0066cc; padding: 15px; margin: 20px 0; border-radius: 0 5px 5px 0; }
+        .tech-stack { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; justify-content: center;}
         .badge { background: #232f3e; color: white; padding: 6px 15px; border-radius: 20px; font-size: 0.9em; }
-        a { color: #0066cc; text-decoration: none; }
+        a { color: #0066cc; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
-        .social-links { margin-top: 10px; }
+        .social-links { margin-top: 10px; text-align: center; }
         .social-links p { margin: 8px 0; }
-        .video-embed { background: #e2e3e5; padding: 15px; border-radius: 5px; margin-top: 10px; font-style: italic; }
-        ul { margin-bottom: 20px; }
         .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #ddd; color: #666; font-size: 0.9em; text-align: center; }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="journal.html">Daily Journal</a>
+            <a href="projects.html">Projects & Labs</a>
+            <a href="https://github.com/stevenkiel" target="_blank">GitHub</a>
+        </nav>
+
+        <!-- PROFILE PICTURE -->
+        <div class="profile-pic-container">
+            <!-- Note: Upload your image to the repo and name it 'profile.jpg' -->
+            <img src="profile.jpg" alt="Steven Kiel" class="profile-pic">
+        </div>
+
+        <!-- HEADER & BRANDING -->
         <h1>Steven Kiel</h1>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; padding: 20px; border-radius: 10px; 
-            margin: 20px 0; text-align: center;">
-    <h2 style="margin: 0; color: white;">🎬 New YouTube Channel: "AI Made Me Employable"</h2>
-    <p style="margin: 10px 0 0 0;">Follow my journey from 5-year gap → Amazon DCT III</p>
-</div>
-        <p class="tagline">Incoming Air Force/Space Force Officer | Rebuilding IT Skills with AI | Future Amazon Data Center Tech III</p>
+        <p class="channel-name">AI Made Me Employable</p>
+        <p class="tagline">Incoming Air Force/Space Force Officer | Rebuilding IT Skills with AI | Future Amazon DCT III</p>
         
         <div class="journey-box">
             <strong>🎯 The Mission:</strong> 5-year IT gap. Incoming Military Officer. Goal: Land an Amazon DCT III role. Method: Zero-cost virtual home lab + AI + GNS3 + Public documentation.
         </div>
 
-        <h2>📺 Follow the Journey</h2>
+        <!-- LATEST ACTIVITY TEASER -->
+        <div class="latest-box">
+            <h3 style="color: #0066cc; margin-top: 0;">🔥 Latest Activity: Day 0 Complete</h3>
+            <p><strong>Win:</strong> GitHub Pages site deployed. GNS3 & VirtualBox installed. Brand identity created.</p>
+            <p><strong>Next Up (Tomorrow):</strong> Building the first 2-router topology in GNS3 and letting AI write the Cisco IOS config!</p>
+            <a href="journal.html">Read the full Day 0 Log →</a>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <h2 style="text-align: center;">📺 Follow the Journey</h2>
         <div class="social-links">
-            <p><strong>YouTube:</strong> <a href="https://www.youtube.com/@AIMadeMeEmployable" target="_blank">https://www.youtube.com/@AIMadeMeEmployable</a></p>
-            <p><strong>TikTok:</strong> On its way! 🚀</p>
-            <p><strong>Instagram:</strong> On its way! 🚀</p>
+            <p><strong>YouTube:</strong> AI Made Me Employable (@EmployedByAI) - <em>On its way!</em></p>
+            <p><strong>TikTok:</strong> @EmployedByAI - <em>On its way!</em></p>
+            <p><strong>Instagram:</strong> @EmployedByAI - <em>On its way!</em></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/stevenkiel" target="_blank">github.com/stevenkiel</a></p>
         </div>
 
-        <h2>🛠️ Tech Stack</h2>
+        <h2 style="text-align: center;">🛠️ Tech Stack</h2>
         <div class="tech-stack">
             <span class="badge">GNS3</span>
-            <span class="badge">pfSense</span>
+            <span class="badge">Palo Alto</span>
             <span class="badge">Linux</span>
             <span class="badge">Cisco IOS</span>
-            <span class="badge">Generative AI</span>
+            <span class="badge">AI Utlilazation</span>
             <span class="badge">VirtualBox</span>
-        </div>
-
-        <h2>📓 Journey Log</h2>
-        
-        <!-- DAY 0 ENTRY -->
-        <div class="day-entry">
-            <h3>Day 0 - The Foundation</h3>
-            <p><strong>Goal:</strong> Build the digital headquarters and spin up the virtual lab environment.</p>
-            
-            <h4>✅ Completed:</h4>
-            <ul>
-                <li>Built and deployed this GitHub Pages portfolio website.</li>
-                <li>Installed GNS3 and the GNS3 VM on VirtualBox.</li>
-                <li>Recorded the rough draft for the Episode 1 intro video.</li>
-            </ul>
-
-            <h4>🎥 Episode 1 Status:</h4>
-            <div class="video-embed">
-                <p><strong>Status:</strong> Rough Draft Recorded! 🎬</p>
-                <p><strong>Hook:</strong> "I'm an incoming Air Force Officer with a 5-year IT gap. I'm using AI and GNS3 to build an enterprise network from scratch to land an Amazon Data Center Tech III job. Let's see if this works."</p>
-                <p><em>(Video will be embedded here once edited and uploaded!)</em></p>
-            </div>
-
-            <h4>🔧 Technical Wins:</h4>
-            <ul>
-                <li><strong>Website is UP:</strong> Digital portfolio is officially live and accessible.</li>
-                <li><strong>Virtual Lab Works:</strong> GNS3 and VirtualBox are fully operational and ready for network emulation.</li>
-            </ul>
-
-            <h4>📝 Plan for Tomorrow (Day 1):</h4>
-            <ul>
-                <li>Build the first 2-router topology in GNS3.</li>
-                <li>Prompt AI for the initial Cisco IOS configuration and test it in the CLI.</li>
-                <li>Film and edit the final cut of Episode 1!</li>
-            </ul>
         </div>
 
         <h2>🎓 Certifications in Progress</h2>
         <ul>
-            <li>⏳ CompTIA Network+ (Target: Coming Soon)</li>
-            <li>⏳ CompTIA Linux+ (Target: Coming Soon)</li>
+            <li>⏳ CompTIA Network+ (Target: 7/17/2026)</li>
+            <li>⏳ CompTIA Linux+ (Target: 8/18/2026)</li>
         </ul>
 
         <h2>💼 Target Role: Amazon Data Center Technician III</h2>
-        <p><strong>Why:</strong> Combine military discipline, past enterprise firewall experience, and modern AI-assisted troubleshooting to manage and maintain critical AWS infrastructure.</p>
+        <p>Combining military discipline, past enterprise firewall experience (Cloud Harmonics), and modern AI-assisted troubleshooting to manage critical AWS infrastructure.</p>
         
         <div class="footer">
             <em>Last updated: Day 0 | Built with GitHub Pages</em>
